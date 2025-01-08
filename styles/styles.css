@@ -6,8 +6,8 @@
 }
 
 :root {
-  --color-primary: #191d2b;
-  --color-secondary: #27AE60;
+  --color-primary: #080808;
+  --color-secondary: #279eae;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -23,7 +23,7 @@
 
 .light-mode {
   --color-primary: #ffffff;
-  --color-secondary: #ae5227;
+  --color-secondary: #23af16;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -312,6 +312,7 @@ section {
 .about-stats .progress-bars .progress-bar .prog-con {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .about-stats .progress-bars .progress-bar .prog-con .prog-text {
   color: var(--color-grey-2);
@@ -333,7 +334,7 @@ section {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .prog-con .progress .html {
-  width: 80%;
+  font-size: 3rem;
 }
 .about-stats .progress-bars .progress-bar .prog-con .progress .css {
   width: 95%;
@@ -697,7 +698,7 @@ section {
 .main-title h2 {
   position: relative;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 .main-title h2 span {
@@ -712,10 +713,10 @@ section {
   z-index: -1;
   transform: translate(-50%, -50%);
   font-weight: 800;
-  font-size: 6.3rem;
+  font-size: 4.3rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 400px) and (max-width: 768px) {
   header {
     padding: 0;
   }
@@ -723,8 +724,27 @@ section {
     padding: 0 !important;
   }
   .theme-btn {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+  }
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .left-header .h-shape {
+    display: none;
+  }
+  .right-header {
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2.5rem !important;
+  }
+  .header-content .left-header .image {
+    width: 90%;
+    margin: 0 auto;
   }
   .about-container {
     grid-template-columns: 1fr;
@@ -777,65 +797,21 @@ section {
   .section {
     padding: 2rem 2.5rem !important;
   }
-}
-@media screen and (max-width: 1432px) {
-  header {
-    padding: 0 !important;
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
   }
-  .section {
-    padding: 7rem 11rem;
-  }
-  .contact-content-con {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact {
-    margin-left: 0;
-    margin-top: 2.5rem;
-  }
-  .main-title h2 {
-    font-size: 2rem;
-  }
-  .main-title h2 span {
-    font-size: 2.5rem;
-  }
-  .main-title h2 .bg-text {
-    font-size: 3rem;
-  }
-  .contact-content-con .right-contact .i-c-2 {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact .i-c-2 :last-child {
-    margin-left: 0;
-    margin-top: 1.5rem;
+  .controls .control {
+    margin: 0.8rem 0.3rem;
   }
 }
-@media screen and (max-width: 1070px) {
-  .about-container {
-    grid-template-columns: 1fr;
-  }
-  .about-container .right-about {
-    padding-top: 2.5rem;
-  }
-  .about-container .portfolios {
-    grid-template-columns: 1fr 1fr;
-  }
-  .about-container .blogs {
-    grid-template-columns: 1fr 1fr;
-  }
-  .about-container .main-title h2 {
-    font-size: 4rem;
-  }
-  .about-container .main-title h2 span {
-    font-size: 4rem;
-  }
-  .about-container .main-title h2 .bg-text {
-    font-size: 5rem;
-  }
-}
-@media screen and (max-width: 970px) {
-  .section {
-    padding: 7rem 6rem;
-  }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .header-content {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
@@ -847,13 +823,45 @@ section {
     grid-row: 1;
     width: 90%;
     margin: 0 auto;
+    padding: 0 !important;
+    justify-content: center;
   }
   .right-header .name {
     font-size: 2.5rem !important;
   }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    padding-top: 2.5rem;
+  }
+  .portfolios {
+    grid-template-columns: 1fr 1fr;
+  }
+  .blogs {
+    grid-template-columns: 1fr 1fr;
+  }
   .header-content .left-header .image {
     width: 90%;
+    height: 90%;
     margin: 0 auto;
+  }
+  .contact-content-con {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+  .contact-content-con .right-contact .i-c-2 {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .section {
+    padding: 2rem 2.5rem !important;
   }
   .controls {
     top: auto;
@@ -866,23 +874,59 @@ section {
     background-color: var(--color-grey-5);
   }
   .controls .control {
-    margin: 6rem 2rem;
-  }
-}
-@media screen and (max-width: 970px) {
-  .section {
-    padding: 7rem 3rem;
-  }
-  .about-stats .progress-bars {
-    grid-template-columns: 1fr;
+    margin: 1rem 1rem;
   }
   .main-title h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .main-title h2 span {
-    font-size: 3.5rem;
+    font-size: 4rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .main-title h2 {
+    font-size: 4rem;
+  }
+  .main-title h2 span {
+    font-size: 4rem;
   }
   .main-title h2 .bg-text {
     font-size: 3.5rem;
+  }
+  .section .about-container {
+    margin: 0 auto !important;
+  }
+  .contact-content-con {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+  .contact-content-con .right-contact .i-c-2 {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .section {
+    padding: 2rem 2.5rem !important;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 1rem 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */

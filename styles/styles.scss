@@ -9,8 +9,8 @@
 }
 
 :root {
-        --color-primary: #191d2b;
-        --color-secondary: #27AE60;
+        --color-primary: #080808;
+        --color-secondary: #279eae;
         --color-white: #FFFFFF;
         --color-black: #000;
         --color-grey0: #f8f8f8;
@@ -27,7 +27,7 @@
 
     .light-mode{
         --color-primary: #ffffff;
-        --color-secondary: #ae5227;
+        --color-secondary: #23af16;
         --color-white: #454e56;
         --color-black: #000;
         --color-grey0: #f8f8f8;
@@ -332,6 +332,7 @@ section{
             .progress-bar {
                 display: flex;
                 flex-direction: column;
+
                 .prog-title {
                     text-transform: uppercase;
                     //font-weight: 700;
@@ -339,6 +340,7 @@ section{
                 .prog-con {
                     display: flex;
                     align-items: center;
+                    justify-content: space-between;
                     .prog-text {
                         color: var(--color-grey-2);
                     }
@@ -357,7 +359,7 @@ section{
                             transition: all .4s ease-in-out;
                             width: 60%;
                         }
-                        .html { width: 80%; }
+                        .html { font-size: 3rem; }
                      .css { width: 95%; }
                      .js { width: 75%; }
                     .react{ width: 60%; }
@@ -735,7 +737,7 @@ section{
     h2{
         position: relative;
         text-transform: uppercase;
-        font-size: 4rem;
+        font-size: 2rem;
         font-weight: 700;
         span{
             color: var(--color-secondary);
@@ -749,7 +751,7 @@ section{
             z-index: -1;
             transform: translate(-50%, -50%);
             font-weight: 800;
-            font-size: 6.3rem;
+            font-size: 4.3rem;
         }
     }
 }
