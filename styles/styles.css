@@ -282,6 +282,9 @@ section {
   height: 2px;
   background-color: var(--color-grey-5);
 }
+.about-container .left-about {
+  padding-right: 2rem;
+}
 .about-container .left-about p {
   line-height: 2 rem;
   color: var(--color-grey-4);
