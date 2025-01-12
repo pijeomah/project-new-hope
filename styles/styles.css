@@ -886,7 +886,7 @@ section {
     font-size: 4.5rem;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .main-title h2 {
     font-size: 4rem;
   }
