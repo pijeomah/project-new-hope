@@ -226,69 +226,69 @@
     }
 
 
-    // @media screen and (min-width: 1024px) and (max-width: 1080px){
+    @media screen and (min-width: 1024px) and (max-width: 1200px){
       
                
      
 
 
-    // .main-title{
-    //     h2{
-    //         font-size: 4rem;
-    //         span{
-    //             font-size: 4rem;
-    //         }
+    .main-title{
+        h2{
+            font-size: 4rem;
+            span{
+                font-size: 4rem;
+            }
 
-    //         .bg-text{
-    //             font-size: 3.5rem;
-    //         }
-    //     }
-    // }
+            .bg-text{
+                font-size: 3.5rem;
+            }
+        }
+    }
 
-    // .section .about-container{
-    //              margin: 0 auto !important;
+    .section .about-container{
+                 margin: 0 auto !important;
     
-    //         }
+            }
 
             
-    //         .contact-content-con{
-    //             flex-direction: column;
-    //             .right-contact{
-    //                 margin-left: 0;
-    //                 margin-top: 2.5rem;
+            .contact-content-con{
+                flex-direction: column;
+                .right-contact{
+                    margin-left: 0;
+                    margin-top: 2.5rem;
         
-    //             }
-    //          }   
+                }
+             }   
 
-    //      .contact-content-con .right-contact .i-c-2{
-    //         flex-direction: column;
+         .contact-content-con .right-contact .i-c-2{
+            flex-direction: column;
             
-    //      }
-    //      .contact-content-con .right-contact .i-c-2 :last-child{
-    //         margin-left: 0;
-    //         margin-top: 1.5rem;
+         }
+         .contact-content-con .right-contact .i-c-2 :last-child{
+            margin-left: 0;
+            margin-top: 1.5rem;
             
-    //      }
+         }
     
-    //         .section{
-    //             padding: 2rem 2.5rem !important;
-    //         }
+            .section{
+                padding: 2rem 2.5rem !important;
+            }
     
-    //  .controls{
-    //     top: auto;
-    //     bottom: 0;
-    //     flex-direction: row;
-    //     justify-content: center;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     width: 100%;
-    //     background-color: var(--color-grey-5);
-    //     .control{
-    //         margin: 1rem 1rem;     
-    //     }
+     .controls{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        .control{
+            margin: 1rem 1rem;     
+        }
 
-    // }
-    // }
+    }
+    }
     // @media screen and (max-width: 1432px){
     //     header{
     //         padding: 0 !important;
