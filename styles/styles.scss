@@ -262,7 +262,7 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 3.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     .right-about {
         display: grid;
         grid-template-columns: repeat( 2, 1fr);
@@ -731,8 +731,8 @@ section{
             transition: all .4s ease-in-out;
             z-index: -1;
             transform: translate(-50%, -50%);
-            font-weight: 800;
-            font-size: 4.3rem;
+            font-weight: 500;
+            font-size: 3.3rem;
         }
     }
 }
